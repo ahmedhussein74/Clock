@@ -1,0 +1,133 @@
+body{
+  background: #eee;
+}
+section{
+  width: 520px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px #607d8b solid;
+  margin-top: 150px;
+}
+section span{
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
+}
+.second, .hour, .minutes{
+  width: 2.5px;
+  height: 380px;
+  background-image: linear-gradient(180deg, red 50%, transparent 50%);
+  animation: rotate 60s linear infinite forwards;
+  border-radius: 15px;
+  position: absolute;
+}
+.hour{
+  height: 240px;
+  animation: rotate 43200s linear infinite forwards;
+  background-image: linear-gradient(180deg, #fff 50%, transparent 50%);
+}
+.minutes{
+  height: 340px;
+  animation: rotate 3600s linear infinite forwards;
+  background-image: linear-gradient(180deg, #fff 50%, transparent 50%);
+}
+#one{
+  top: 8%;
+  right: 25%;
+}
+#two{
+  top: 25%;
+  right: 8%;
+}
+#three{
+  right: 1%;
+  top: calc(50% - 10px);
+}
+#four{
+  bottom: 25%;
+  right: 8%;
+}
+#five{
+  bottom: 8%;
+  right: 25%;
+}
+#six{
+  left: calc(50% - 10px);
+  bottom: 1%;
+}
+#seven{
+  bottom: 8%;
+  left: 25%;
+}
+#eight{
+  bottom: 25%;
+  left: 8%;
+}
+#nine{
+  left: 1%;
+  top: calc(50% - 10px);
+}
+#ten{
+  top: 25%;
+  left: 8%;
+}
+#eleven{
+  top: 8%;
+  left: 25%;
+}
+#twelve{
+  top: 1%;
+  left: calc(50% - 10px);
+}
+@keyframes rotate 
+{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:500px) 
+{
+  section{
+    width: 280px;
+    height: 280px;
+    border: 10px #607d8b solid;
+    margin-top: 100px;
+  }
+  section span{
+    font-size: 18px;
+  }
+  .second, .hour, .minutes{
+    width: 1.5px;
+    height: 190px;
+  }
+  .hour{
+    height: 140px;
+  }
+  .minutes{
+    height: 175px;
+  }
+}
+@media screen and (max-width:1000px) 
+{
+  section{
+    width: 350px;
+    height: 350px;
+    border: 15px #607d8b solid;
+    margin-top: 100px;
+  }
+  section span{
+    font-size: 20px;
+  }
+  .second, .hour, .minutes{
+    width: 2px;
+    height: 220px;
+  }
+  .hour{
+    height: 160px;
+  }
+  .minutes{
+    height: 200px;
+  }
+}
